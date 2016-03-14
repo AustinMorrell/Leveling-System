@@ -1,0 +1,6 @@
+c:\users\austin.morrell\documents\visual studio 2015\Projects\Leveling-System\Leveling-System\bin\Debug\Leveling-System.exe.config
+c:\users\austin.morrell\documents\visual studio 2015\Projects\Leveling-System\Leveling-System\bin\Debug\Leveling-System.exe
+c:\users\austin.morrell\documents\visual studio 2015\Projects\Leveling-System\Leveling-System\bin\Debug\Leveling-System.pdb
+c:\users\austin.morrell\documents\visual studio 2015\Projects\Leveling-System\Leveling-System\obj\Debug\Leveling-System.csprojResolveAssemblyReference.cache
+c:\users\austin.morrell\documents\visual studio 2015\Projects\Leveling-System\Leveling-System\obj\Debug\Leveling-System.exe
+c:\users\austin.morrell\documents\visual studio 2015\Projects\Leveling-System\Leveling-System\obj\Debug\Leveling-System.pdb
