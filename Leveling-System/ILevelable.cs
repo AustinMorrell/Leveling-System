@@ -18,6 +18,16 @@ namespace Leveling_System
             get; set;
         }
 
+        int maxLevel
+        {
+            get; set;
+        }
+
+        int maxEXP
+        {
+            get; set;
+        }
+
         List<double> Curve
         {
             get; set;

@@ -11,11 +11,23 @@ namespace Leveling_System
         static void Main(string[] args)
         {
             Player Bob = new Player();
-            Bob.LevelCurve();
-            foreach(int i in Bob.Curve)
+
+            while(true)
             {
-                Console.WriteLine(Bob.Curve[i] + "\n");
+                Console.WriteLine(Bob.Level);
+                Console.WriteLine(Bob.EXP);
+                Console.ReadLine();
+                Bob.EXP++;
+                if (Bob.EXP > Bob.Curve[Bob.Level])
+                {
+                    for (; Bob.EXP > Bob.Curve[Bob.Level];)
+                    {
+                        Bob.Level++;
+                    }
+                }
+                Console.Clear();
             }
+
             Console.ReadLine();
         }
     }

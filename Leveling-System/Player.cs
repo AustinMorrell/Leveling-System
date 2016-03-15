@@ -10,6 +10,8 @@ namespace Leveling_System
     {
         List<double> m_Curve = new List<double>();
         private int m_Level = 1;
+        private int m_maxLevel = 100;
+        private int m_maxEXP = 0;
         private double m_EXP = 0;
 
         public double EXP
@@ -51,14 +53,48 @@ namespace Leveling_System
             }
         }
 
+        public int maxLevel
+        {
+            get
+            {
+                return m_maxLevel;
+            }
+
+            set
+            {
+                m_maxLevel = value;
+            }
+        }
+
+        public int maxEXP
+        {
+            get
+            {
+                return m_maxEXP;
+            }
+
+            set
+            {
+                m_maxEXP = value;
+            }
+        }
+
         public void LevelCurve()
         {
-            double TempEXPNumber;
-            for (int i = 1; i < 100; i++)
+            double TempEXPNumber = 0;
+            for (int i = 1; i < maxLevel; i++)
             {
                 TempEXPNumber = Math.Pow(i, 2);
-                m_Curve[i] = TempEXPNumber;
+                Curve.Add(TempEXPNumber);
             }
+            maxEXP = (int)Curve[98];
+        }
+
+        public Player()
+        {
+            LevelCurve();
+            EXP = 7000;
+            Level = (int)EXP / maxEXP;
         }
     }
 }
